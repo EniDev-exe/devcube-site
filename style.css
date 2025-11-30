@@ -64,6 +64,14 @@ header {
   object-fit: contain;    /* garante que não distorça */
 }
 
+@media (max-width: 900px) {
+  .logo-img {
+    height: 30px;           /* altura da logo */
+    width: auto;            /* mantém a proporção */
+    object-fit: contain;    /* garante que não distorça */
+  }
+}
+
 nav ul {
   display: flex;
   gap: 1.5rem;
@@ -263,8 +271,6 @@ section {
     display: none;
   }
 }
-
-
 
 
 .about-grid p {
