@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>DevCube - Soluções Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-cube"></div>
+        <img src="logo_text.png" alt="Logo DevCube" class="logo-img">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre-nos">Sobre nós</a></li>
+          <li><a href="#nossos-projetos">Nossos projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>
+          Soluções web sob medida<br>
+          para <span>negócios</span>.
+        </h1>
+        <p>
+          A DevCube cria sites modernos, rápidos e responsivos para colocar a sua empresa em destaque no digital.
+          Do layout à publicação, cuidamos de tudo para você.
+        </p>
+
+        <div class="hero-badges">
+          <div class="badge">Desenvolvimento de Sites</div>
+          <div class="badge">Landing Pages Otimizadas</div>
+          <div class="badge">Negócios e serviços</div>
+        </div>
+
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+            Solicitar orçamento →
+          </button>
+          <button class="btn btn-outline" onclick="document.getElementById('nossos-projetos').scrollIntoView({behavior: 'smooth'})">
+            Ver nossos projetos
+          </button>
+          <span class="hero-secondary">Prazo, clareza e resultado em primeiro lugar.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <p class="hero-card-title">Painel de performance DevCube</p>
+        <p style="font-size:0.86rem;color:rgba(255,255,250,0.8);">
+          Projetos pensados para SEO, conversão e experiência de uso.
+        </p>
+
+        <div class="hero-metrics">
+          <div class="metric">
+            <strong>70%+</strong>
+            <span> aumento médio em leads após o novo site.</span>
+          </div>
+          <div class="metric">
+            <strong>1,2s</strong>
+            <span>tempo médio de carregamento das páginas.</span>
+          </div>
+          <div class="metric">
+            <strong>100%</strong>
+            <span>sites responsivos do celular ao desktop.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NÓS -->
+  <section id="sobre-nos">
+    <div class="section-inner">
+      <img src="grafico.png" alt="Gráfico" class="grafico-sobre">
+      <h2 class="section-title">Sobre a DevCube</h2>
+      <p class="section-subtitle">
+        Somos uma empresa de Salvador focada em transformar ideias em experiências digitais memoráveis.
+        Nossa missão é tirar o peso da tecnologia dos seus ombros para que você foque no seu negócio.
+      </p>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            Combinamos design estratégico e desenvolvimento moderno para entregar sites que não só
+            ficam bonitos, mas também vendem, comunicam e posicionam sua marca.
+          </p>
+          <p>
+            Atendemos profissionais autônomos, pequenos negócios, startups
+            e empresas que precisam dar o próximo passo no digital.
+          </p>
+
+          <div class="pill-list">
+            <span class="pill">Foco em resultados</span>
+            <span class="pill">Atendimento próximo</span>
+            <span class="pill">Experiência em negócios</span>
+            <span class="pill">Tecnologias atuais</span>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <h3>O que entregamos em cada projeto</h3>
+          <ul class="about-list">
+            <li>Site responsivo e adaptado para celular, tablet e desktop.</li>
+            <li>Integração com WhatsApp, redes sociais e e-mail.</li>
+            <li>Configuração de domínio, hospedagem e e-mail profissional.</li>
+            <li>SEO avançado para melhorar seu posicionamento no Google.</li>
+            <li>Painel simples para você atualizar textos e imagens.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSOS PROJETOS / CARROSSEL -->
+  <section id="nossos-projetos">
+    <div class="section-inner">
+      <h2 class="section-title">Nossos projetos</h2>
+      <p class="section-subtitle">
+        Nós atendemos desde o micro-empreendedor e autônomo até empresas de grande relevância, confira.
+      </p>
+
+      <div class="carousel-wrapper">
+        <div class="carousel" id="projectCarousel">
+          <div class="carousel-track">
+
+            <!-- PROJETO 1 -->
+            <article class="project-card">
+              <div class="project-inner">
+                <div class="project-image">
+                  <!-- troque por uma <img src="caminho.jpg"> -->
+                  Preview do site da Cafeteria Baiana
+                </div>
+                <div class="project-content">
+                  <div class="project-tag">Site institucional</div>
+                  <h3>Cafeteria Baiana</h3>
+                  <p class="project-desc">
+                    Landing page elegante para uma cafeteria no Rio Vermelho,
+                    com cardápio digital, integração com Instagram e botão direto para pedidos no WhatsApp.
+                  </p>
+                  <p class="project-meta">
+                    • Foco em experiência mobile<br>
+                    • Otimização para buscas locais (“cafeteria no Rio Vermelho”)<br>
+                    • Sessão de avaliações com depoimentos de clientes
+                  </p>
+                  <button class="btn btn-outline">Ver detalhes do projeto</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJETO 2 -->
+            <article class="project-card">
+              <div class="project-inner">
+                <div class="project-image">
+                  Site do escritório de advocacia Silva &amp; Lopes
+                </div>
+                <div class="project-content">
+                  <div class="project-tag">Site profissional</div>
+                  <h3>Silva &amp; Lopes Advocacia</h3>
+                  <p class="project-desc">
+                    Site limpo e objetivo para escritório de advocacia em Salvador,
+                    com apresentação da equipe, áreas de atuação e blog de artigos jurídicos.
+                  </p>
+                  <p class="project-meta">
+                    • Painel para publicação de artigos<br>
+                    • Formulário de contato segmentado por área<br>
+                    • Layout sóbrio com foco em credibilidade
+                  </p>
+                  <button class="btn btn-outline">Ver detalhes do projeto</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJETO 3 -->
+            <article class="project-card">
+              <div class="project-inner">
+                <div class="project-image">
+                  Plataforma da Academia Alto Nível
+                </div>
+                <div class="project-content">
+                  <div class="project-tag">Landing page de vendas</div>
+                  <h3>Academia Alto Nível</h3>
+                  <p class="project-desc">
+                    Página de alta conversão para academia na Pituba,
+                    com plano mensal destacado, prova social e integração com plataforma de pagamentos.
+                  </p>
+                  <p class="project-meta">
+                    • Seção de planos e benefícios<br>
+                    • Integração com Google Analytics<br>
+                    • Testes A/B em chamadas de ação
+                  </p>
+                  <button class="btn btn-outline">Ver detalhes do projeto</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <div class="dots">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+          </div>
+          <div class="arrow-buttons">
+            <button class="arrow-btn" id="prevProject" aria-label="Projeto anterior">‹</button>
+            <button class="arrow-btn" id="nextProject" aria-label="Próximo projeto">›</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="section-inner">
+      <h2 class="section-title">Entre em contato</h2>
+      <p class="section-subtitle">
+        Conte um pouco sobre o seu projeto que retornamos com um orçamento personalizado.
+        Atendemos via e-mail, WhatsApp e reuniões online.
+      </p>
+
+      <div class="contact-grid">
+        <form>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+          <label for="empresa">Empresa (opcional)</label>
+          <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa ou projeto">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, reformulação de site..." required></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+        </form>
+
+        <div class="contact-info">
+          <p>
+            Preferimos uma conversa direta e sem complicação. Se você quiser, pode mandar uma mensagem com um áudio
+            explicando o que precisa e nós traduzimos isso em um projeto para web.
+          </p>
+
+          <ul class="contact-list">
+            <li><strong>E-mail:</strong> contato@devcube.com.br</li>
+            <li><strong>Whatsapp:</strong> (71) 9 9999-9999</li>
+            <li><strong>Localização:</strong> Salvador - BA</li>
+          </ul>
+
+          <p class="contact-badge">
+            Atendemos projetos em todo o Brasil, carinho por seu negócio como se fosse nosso. 💜
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> DevCube — Soluções Web.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
