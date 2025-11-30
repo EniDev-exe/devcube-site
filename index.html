@@ -225,49 +225,63 @@
 
   <!-- CONTATO -->
   <section id="contato">
-    <div class="section-inner">
-      <h2 class="section-title">Entre em contato</h2>
-      <p class="section-subtitle">
-        Conte um pouco sobre o seu projeto que retornamos com um orçamento personalizado.
-        Atendemos via e-mail, WhatsApp e reuniões online.
-      </p>
+  <div class="section-inner">
+    <h2 class="section-title">Entre em contato</h2>
+    <p class="section-subtitle">
+      Conte um pouco sobre o seu projeto que retornamos com um orçamento personalizado.
+      Atendemos via e-mail, WhatsApp e reuniões online.
+    </p>
 
-      <div class="contact-grid">
-        <form action="https://formsubmit.co/contatodevcube1@gmail.com" method="POST">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
+    <div class="contact-grid">
+      <form action="https://formsubmit.co/contatodevcube1@gmail.com" method="POST">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
 
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
 
-          <label for="empresa">Empresa (opcional)</label>
-          <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa ou projeto">
+        <label for="empresa">Empresa (opcional)</label>
+        <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa ou projeto">
 
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, reformulação de site..." required></textarea>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, reformulação de site..." required></textarea>
 
-          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-        </form>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+        <input type="hidden" name="_next" value="https://enidev-exe.github.io/devcube-site/">
 
-        <div class="contact-info">
-          <p>
-            Preferimos uma conversa direta e sem complicação. Se você quiser, pode mandar uma mensagem com um áudio
-            explicando o que precisa e nós traduzimos isso em um projeto para web.
-          </p>
+      </form>
 
-          <ul class="contact-list">
-            <li><strong>E-mail:</strong> contato@devcube.com.br</li>
-            <li><strong>Whatsapp:</strong> (71) 9 8667-5310</li>
-            <li><strong>Localização:</strong> Salvador - BA</li>
-          </ul>
+      <div class="contact-info">
+        <p>
+          Preferimos uma conversa direta e sem complicação. Se você quiser, pode mandar uma mensagem com um áudio
+          explicando o que precisa e nós traduzimos isso em um projeto para web.
+        </p>
 
-          <p class="contact-badge">
-            Atendemos projetos em todo o Brasil, carinho por seu negócio como se fosse nosso. 💜
-          </p>
-        </div>
+        <ul class="contact-list">
+
+           <!-- Botão do whatsapp -->
+          <li>
+            <a
+              href="https://wa.me/5571986675310"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              WhatsApp
+            </a>
+          </li>
+
+          <li><strong>E-mail:</strong> contato@devcube.com.br</li>
+
+          <li><strong>Localização:</strong> Salvador - BA</li>
+        </ul>
+
+        <p class="contact-badge">
+          Atendemos projetos em todo o Brasil, carinho por seu negócio como se fosse nosso. 💜
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer>
     © <span id="year"></span> DevCube — Soluções Web.
