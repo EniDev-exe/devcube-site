@@ -258,6 +258,13 @@ section {
   pointer-events: none; /* não atrapalha clique em nada embaixo */
 }
 
+@media (max-width: 900px) {
+  .grafico-sobre {
+    display: none;
+  }
+}
+
+
 
 
 .about-grid p {
