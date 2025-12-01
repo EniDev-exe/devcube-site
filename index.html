@@ -5,6 +5,7 @@
   <title>DevCube - Soluções Web</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -233,23 +234,26 @@
     </p>
 
     <div class="contact-grid">
-      <form action="https://formsubmit.co/contatodevcube1@gmail.com" method="POST">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
+  <form action="https://formsubmit.co/contatodevcube1@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://enidev-exe.github.io/devcube-site/?success=1">
+    <input type="hidden" name="_subject" value="Novo contato pelo site DevCube">
+    <input type="hidden" name="_template" value="box">
 
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
 
-        <label for="empresa">Empresa (opcional)</label>
-        <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa ou projeto">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
 
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, reformulação de site..." required></textarea>
+    <label for="empresa">Empresa (opcional)</label>
+    <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa ou projeto">
 
-        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-        <input type="hidden" name="_next" value="https://enidev-exe.github.io/devcube-site/">
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, reformulação de site..." required></textarea>
 
-      </form>
+    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+  </form>
+</div>
 
       <div class="contact-info">
         <p>
@@ -270,7 +274,7 @@
             </a>
           </li>
 
-          <li><strong>E-mail:</strong> contato@devcube.com.br</li>
+          <li><strong>E-mail:</strong> contatodevcube1@gmail.com</li>
 
           <li><strong>Localização:</strong> Salvador - BA</li>
         </ul>
@@ -288,5 +292,17 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- POPUP DE SUCESSO FORMULÁRIO-->
+<div id="form-success-popup" class="popup-success">
+  <div class="popup-content">
+    <h3>Mensagem enviada! ✅</h3>
+    <p>Obrigado por entrar em contato. Em breve retornaremos para falar sobre seu projeto.</p>
+    <div class="popup-progress">
+      <div class="popup-progress-bar"></div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
