@@ -33,3 +33,37 @@ prevBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
   updateCarousel(currentIndex + 1);
 });
+
+
+//Sucesso do formulário
+function getQueryParam(param) {
+  const params = new URLSearchParams(window.location.search);
+  return params.get(param);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const success = getQueryParam("success");
+  const popup = document.getElementById("form-success-popup");
+
+  if (success && popup) {
+    popup.classList.add("is-visible");
+
+    setTimeout(() => {
+      popup.classList.remove("is-visible");
+
+      // remove ?success=1 da URL
+      const url = new URL(window.location.href);
+      url.searchParams.delete("success");
+      window.history.replaceState({}, "", url.toString());
+    }, 3200);
+
+    popup.addEventListener("click", (e) => {
+      if (e.target === popup) {
+        popup.classList.remove("is-visible");
+        const url = new URL(window.location.href);
+        url.searchParams.delete("success");
+        window.history.replaceState({}, "", url.toString());
+      }
+    });
+  }
+});
