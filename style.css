@@ -466,6 +466,13 @@ section {
   margin-top: 2rem;
 }
 
+#mensagem {
+  resize: none;      
+  min-height: 120px; 
+  max-height: 120px; 
+}
+
+
 form {
   background: rgba(8, 7, 5, 0.8);
   padding: 1.75rem;
@@ -584,4 +591,62 @@ footer {
   .carousel-wrapper {
     padding-inline: 1rem;
   }
+}
+
+.popup-success {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-success .popup-content {
+  background: #080705;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  max-width: 400px;
+  width: 90%;
+  color: #FFFFFA;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.popup-success h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.popup-success p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.popup-progress {
+  position: relative;
+  height: 4px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.popup-progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(135deg, #ff6b6b, #f72585);
+  transform-origin: left;
+  animation: popupProgress 3s linear forwards;
+}
+
+@keyframes popupProgress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.popup-success.is-visible {
+  display: flex;
 }
