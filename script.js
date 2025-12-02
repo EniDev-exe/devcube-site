@@ -1,41 +1,24 @@
 // ano dinâmico no footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// CARROSSEL SIMPLES
-const track = document.querySelector(".carousel-track");
-const dots = Array.from(document.querySelectorAll(".dot"));
-const prevBtn = document.getElementById("prevProject");
-const nextBtn = document.getElementById("nextProject");
+// ==================== LÓGICA DO MENU MOBILE ====================
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelectorAll(".nav-menu a");
 
-let currentIndex = 0;
-const totalSlides = dots.length;
-
-function updateCarousel(index) {
-  currentIndex = (index + totalSlides) % totalSlides;
-  const offset = -currentIndex * 100;
-  track.style.transform = `translateX(${offset}%)`;
-
-  dots.forEach(dot => dot.classList.remove("active"));
-  dots[currentIndex].classList.add("active");
-}
-
-dots.forEach(dot => {
-  dot.addEventListener("click", () => {
-    const index = Number(dot.dataset.index);
-    updateCarousel(index);
-  });
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
 });
 
-prevBtn.addEventListener("click", () => {
-  updateCarousel(currentIndex - 1);
-});
-
-nextBtn.addEventListener("click", () => {
-  updateCarousel(currentIndex + 1);
+// Fecha o menu quando um link é clicado (útil para navegação #hash)
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
 });
 
 
-//Sucesso do formulário
+// ==================== Sucesso do formulário ====================
 function getQueryParam(param) {
   const params = new URLSearchParams(window.location.search);
   return params.get(param);
@@ -66,4 +49,35 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  
+  // ==================== LÓGICA MOSTRAR MAIS PROJETOS ====================
+  const showMoreBtn = document.getElementById("show-more-btn");
+  const hiddenProjects = document.querySelectorAll(".project-hidden");
+  const noMoreMsg = document.getElementById("no-more-msg");
+
+  if (showMoreBtn && hiddenProjects.length > 0) {
+      showMoreBtn.addEventListener("click", () => {
+          // 1. Torna todos os projetos ocultos visíveis
+          hiddenProjects.forEach(project => {
+              // Remove a classe de ocultar
+              project.classList.remove("project-hidden"); 
+              // Adiciona a classe de visibilidade para triggerar a animação de entrada
+              project.classList.add("is-visible");
+          });
+          
+          // 2. Oculta o botão "Mostrar mais"
+          showMoreBtn.style.display = "none";
+
+          // 3. Exibe a mensagem de que não há mais projetos
+          noMoreMsg.classList.add("visible-msg");
+      });
+  } 
+  
+  // Se não houver projetos ocultos (ou se forem removidos no HTML), 
+  // o botão não é exibido e a mensagem aparece automaticamente.
+  if (hiddenProjects.length === 0 && showMoreBtn) {
+      showMoreBtn.style.display = "none";
+      noMoreMsg.classList.add("visible-msg");
+  }
+  // ==================== FIM DA LÓGICA MOSTRAR MAIS PROJETOS ====================
 });
