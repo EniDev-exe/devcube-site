@@ -1,311 +1,287 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>DevCube - Soluções Web</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCube | Soluções Web Sob Medida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="nav-container">
-      <div class="logo">
-        <div class="logo-cube"></div>
-        <img src="logo_text.png" alt="Logo DevCube" class="logo-img">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre-nos">Sobre nós</a></li>
-          <li><a href="#nossos-projetos">Nossos projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo_text.png" alt="DevCube Logo" class="logo-img">
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="#nossos-projetos">Nossos projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="hero-inner">
-      <div>
-        <h1>
-          Soluções web sob medida<br>
-          para <span>negócios</span>.
-        </h1>
-        <p>
-          A DevCube cria sites modernos, rápidos e responsivos para colocar a sua empresa em destaque no digital.
-          Do layout à publicação, cuidamos de tudo para você.
-        </p>
-
-        <div class="hero-badges">
-          <div class="badge">Desenvolvimento de Sites</div>
-          <div class="badge">Landing Pages Otimizadas</div>
-          <div class="badge">Negócios e serviços</div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </header>
 
-        <div class="hero-cta">
-          <button class="btn btn-primary" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
-            Solicitar orçamento →
-          </button>
-          <button class="btn btn-outline" onclick="document.getElementById('nossos-projetos').scrollIntoView({behavior: 'smooth'})">
-            Ver nossos projetos
-          </button>
-          <span class="hero-secondary">Prazo, clareza e resultado em primeiro lugar.</span>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <p class="hero-card-title">Painel de performance DevCube</p>
-        <p style="font-size:0.86rem;color:rgba(255,255,250,0.8);">
-          Projetos pensados para SEO, conversão e experiência de uso.
-        </p>
-
-        <div class="hero-metrics">
-          <div class="metric">
-            <strong>70%+</strong>
-            <span> aumento médio em leads após o novo site.</span>
-          </div>
-          <div class="metric">
-            <strong>1,2s</strong>
-            <span>tempo médio de carregamento das páginas.</span>
-          </div>
-          <div class="metric">
-            <strong>100%</strong>
-            <span>sites responsivos do celular ao desktop.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOBRE NÓS -->
-  <section id="sobre-nos">
-    <div class="section-inner">
-      <img src="grafico.png" alt="Gráfico" class="grafico-sobre">
-      <h2 class="section-title">Sobre a DevCube</h2>
-      <p class="section-subtitle">
-        Somos uma empresa de Salvador focada em transformar ideias em experiências digitais memoráveis.
-        Nossa missão é tirar o peso da tecnologia dos seus ombros para que você foque no seu negócio.
-      </p>
-
-      <div class="about-grid">
-        <div>
-          <p>
-            Combinamos design estratégico e desenvolvimento moderno para entregar sites que não só
-            ficam bonitos, mas também vendem, comunicam e posicionam sua marca.
-          </p>
-          <p>
-            Atendemos profissionais autônomos, pequenos negócios, startups
-            e empresas que precisam dar o próximo passo no digital.
-          </p>
-
-          <div class="pill-list">
-            <span class="pill">Foco em resultados</span>
-            <span class="pill">Atendimento próximo</span>
-            <span class="pill">Experiência em negócios</span>
-            <span class="pill">Tecnologias atuais</span>
-          </div>
-        </div>
-
-        <div class="about-card">
-          <h3>O que entregamos em cada projeto</h3>
-          <ul class="about-list">
-            <li>Site responsivo e adaptado para celular, tablet e desktop.</li>
-            <li>Integração com WhatsApp, redes sociais e e-mail.</li>
-            <li>Configuração de domínio, hospedagem e e-mail profissional.</li>
-            <li>SEO avançado para melhorar seu posicionamento no Google.</li>
-            <li>Painel simples para você atualizar textos e imagens.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NOSSOS PROJETOS / CARROSSEL -->
-  <section id="nossos-projetos">
-    <div class="section-inner">
-      <h2 class="section-title">Nossos projetos</h2>
-      <p class="section-subtitle">
-        Nós atendemos desde o micro-empreendedor e autônomo até empresas de grande relevância, confira.
-      </p>
-
-      <div class="carousel-wrapper">
-        <div class="carousel" id="projectCarousel">
-          <div class="carousel-track">
-
-            <!-- PROJETO 1 -->
-            <article class="project-card">
-              <div class="project-inner">
-                <div class="project-image">
-                  <!-- troque por uma <img src="caminho.jpg"> -->
-                  Preview do site da Cafeteria Baiana
+    <section id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1>
+                    Soluções web sob medida <br>
+                    para <span>negócios.</span>
+                </h1>
+                <p>
+                    A DevCube cria sites modernos, rápidos e responsivos para colocar a sua
+                    empresa em destaque no digital. Do layout à publicação, cuidamos de tudo
+                    para você.
+                </p>
+                
+                <div class="hero-badges">
+                    <span class="badge">Desenvolvimento de Sites</span>
+                    <span class="badge">Landing Pages Otimizadas</span>
+                    <span class="badge">Negócios e serviços</span>
                 </div>
-                <div class="project-content">
-                  <div class="project-tag">Site institucional</div>
-                  <h3>Cafeteria Baiana</h3>
-                  <p class="project-desc">
-                    Landing page elegante para uma cafeteria no Rio Vermelho,
-                    com cardápio digital, integração com Instagram e botão direto para pedidos no WhatsApp.
-                  </p>
-                  <p class="project-meta">
-                    • Foco em experiência mobile<br>
-                    • Otimização para buscas locais (“cafeteria no Rio Vermelho”)<br>
-                    • Sessão de avaliações com depoimentos de clientes
-                  </p>
-                  <button class="btn btn-outline">Ver detalhes do projeto</button>
-                </div>
-              </div>
-            </article>
 
-            <!-- PROJETO 2 -->
-            <article class="project-card">
-              <div class="project-inner">
-                <div class="project-image">
-                  Site do escritório de advocacia Silva &amp; Lopes
+                <div class="hero-cta">
+                    <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
+                    <a href="#nossos-projetos" class="btn btn-outline">Ver nossos projetos</a>
+                    <p class="hero-secondary">Prazo, clareza e resultado em primeiro lugar.</p>
                 </div>
-                <div class="project-content">
-                  <div class="project-tag">Site profissional</div>
-                  <h3>Silva &amp; Lopes Advocacia</h3>
-                  <p class="project-desc">
-                    Site limpo e objetivo para escritório de advocacia em Salvador,
-                    com apresentação da equipe, áreas de atuação e blog de artigos jurídicos.
-                  </p>
-                  <p class="project-meta">
-                    • Painel para publicação de artigos<br>
-                    • Formulário de contato segmentado por área<br>
-                    • Layout sóbrio com foco em credibilidade
-                  </p>
-                  <button class="btn btn-outline">Ver detalhes do projeto</button>
-                </div>
-              </div>
-            </article>
+            </div>
 
-            <!-- PROJETO 3 -->
-            <article class="project-card">
-              <div class="project-inner">
-                <div class="project-image">
-                  Plataforma da Academia Alto Nível
+            <div class="hero-visual">
+                <p class="hero-card-title">Painel de performance DevCube</p>
+                <p class="hero-secondary">
+                    Projetos pensados para SEO, conversão e experiência de uso.
+                </p>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <strong>70%+</strong>
+                        <p>aumento médio em leads após o novo site.</p>
+                    </div>
+                    <div class="metric">
+                        <strong>1.2s</strong>
+                        <p>tempo médio de carregamento das páginas.</p>
+                    </div>
+                    <div class="metric">
+                        <strong>100%</strong>
+                        <p>sites responsivos do celular ao desktop.</p>
+                    </div>
                 </div>
-                <div class="project-content">
-                  <div class="project-tag">Landing page de vendas</div>
-                  <h3>Academia Alto Nível</h3>
-                  <p class="project-desc">
-                    Página de alta conversão para academia na Pituba,
-                    com plano mensal destacado, prova social e integração com plataforma de pagamentos.
-                  </p>
-                  <p class="project-meta">
-                    • Seção de planos e benefícios<br>
-                    • Integração com Google Analytics<br>
-                    • Testes A/B em chamadas de ação
-                  </p>
-                  <button class="btn btn-outline">Ver detalhes do projeto</button>
-                </div>
-              </div>
-            </article>
-
-          </div>
+            </div>
         </div>
+    </section>
 
-        <div class="carousel-controls">
-          <div class="dots">
-            <button class="dot active" data-index="0"></button>
-            <button class="dot" data-index="1"></button>
-            <button class="dot" data-index="2"></button>
-          </div>
-          <div class="arrow-buttons">
-            <button class="arrow-btn" id="prevProject" aria-label="Projeto anterior">‹</button>
-            <button class="arrow-btn" id="nextProject" aria-label="Próximo projeto">›</button>
-          </div>
+    <section id="sobre-nos">
+        <div class="section-inner">
+            <h2 class="section-title">Sobre nós</h2>
+            <p class="section-subtitle">
+                Mais do que código, oferecemos parceria. Nossa missão é entender o seu objetivo
+                e traduzir a sua visão em uma plataforma digital eficaz.
+            </p>
+            <img src="grafico.png" alt="Gráfico de crescimento" class="grafico-sobre">
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        A DevCube nasceu da necessidade de mercado por soluções web que entregam
+                        performance real, sem os custos e a burocracia das grandes agências. Somos
+                        especializados em desenvolver sites institucionais, landing pages de alta
+                        conversão e e-commerces sob medida.
+                    </p>
+                    <p>
+                        Priorizamos a comunicação clara e um processo ágil. Seu projeto é tocado
+                        diretamente por especialistas, garantindo a qualidade técnica e o foco
+                        nos seus resultados.
+                    </p>
+                    <div class="pill-list">
+                        <span class="pill"><i class="fa-solid fa-code"></i> Desenvolvimento Ágil</span>
+                        <span class="pill"><i class="fa-solid fa-medal"></i> Qualidade Técnica</span>
+                        <span class="pill"><i class="fa-solid fa-rocket"></i> Foco em Conversão</span>
+                    </div>
+                </div>
+                
+                <div class="about-card">
+                    <h3>Nossas entregas incluem:</h3>
+                    <ul class="about-list">
+                        <li>Design moderno e personalizado.</li>
+                        <li>Otimização completa para buscadores (SEO).</li>
+                        <li>Integração com Google Analytics e Meta Pixels.</li>
+                        <li>Otimização para velocidade máxima (GTmetrix).</li>
+                        <li>Hospedagem e manutenção (opcional).</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <section id="nossos-projetos">
+        <div class="section-inner">
+            <h2 class="section-title">Nossos projetos</h2>
+            <p class="section-subtitle">
+                Nós atendemos desde o micro-empreendedor e autônomo até empresas de grande relevância, confira.
+            </p>
+
+            <div class="projects-grid">
+                
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="projeto-cafeteria.jpg" alt="Preview do site da Cafeteria Baiana">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">Site institucional</div>
+                        <h3>Cafeteria Baiana</h3>
+                        <p class="project-desc">Landing page elegante com cardápio digital e integração direta para pedidos.</p>
+                        <button class="btn btn-outline btn-small">Ver projeto</button>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="projeto-advocacia.jpg" alt="Preview do site da Silva & Lopes Advocacia">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">Site profissional</div>
+                        <h3>Silva &amp; Lopes Advocacia</h3>
+                        <p class="project-desc">Site limpo e objetivo com apresentação da equipe e blog de artigos jurídicos.</p>
+                        <button class="btn btn-outline btn-small">Ver projeto</button>
+                    </div>
+                </article>
+
+                <article class="project-item"> 
+                    <div class="project-image">
+                        <img src="projeto-academia.jpg" alt="Preview da plataforma Academia Alto Nível">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">Landing page de vendas</div>
+                        <h3>Academia Alto Nível</h3>
+                        <p class="project-desc">Página de alta conversão com planos mensais em destaque e prova social.</p>
+                        <button class="btn btn-primary btn-small">Ver case de sucesso →</button>
+                    </div>
+                </article>
+                
+                <article class="project-item project-hidden">
+                    <div class="project-image">
+                        <img src="projeto-startup.jpg" alt="Preview do site Startup Alpha">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">Site corporativo</div>
+                        <h3>Startup Alpha</h3>
+                        <p class="project-desc">Plataforma moderna para captação de investimento e apresentação de produto.</p>
+                        <button class="btn btn-outline btn-small">Ver projeto</button>
+                    </div>
+                </article>
+
+                <article class="project-item project-hidden">
+                    <div class="project-image">
+                        <img src="projeto-portfolio.jpg" alt="Preview do Portfólio João Costa Design">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">Portfólio Profissional</div>
+                        <h3>João Costa Design</h3>
+                        <p class="project-desc">Portfólio one-page elegante focado em imagens e depoimentos de clientes.</p>
+                        <button class="btn btn-outline btn-small">Ver projeto</button>
+                    </div>
+                </article>
+
+                <article class="project-item project-hidden">
+                    <div class="project-image">
+                        <img src="projeto-ecommerce.jpg" alt="Preview da loja virtual Trend Fashion">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">Loja Virtual</div>
+                        <h3>Trend Fashion</h3>
+                        <p class="project-desc">Loja virtual integrada a plataformas de pagamento e sistema de estoque.</p>
+                        <button class="btn btn-outline btn-small">Ver projeto</button>
+                    </div>
+                </article>
+                </div>
+
+            <div class="projects-footer">
+                <button id="show-more-btn" class="btn btn-outline">Mostrar mais projetos</button>
+                <p id="no-more-msg" class="hidden-msg">
+                    🎉 Estes são todos os projetos disponíveis para visualização no momento!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="section-inner">
+            <h2 class="section-title">Entre em contato</h2>
+            <p class="section-subtitle">
+                Conte um pouco sobre o seu projeto que retornamos com um orçamento personalizado. Atendemos via e-mail, WhatsApp e reuniões online.
+            </p>
+
+            <div class="contact-grid">
+                <form action="process.php" method="POST">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Como você se chama?" required>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    
+                    <label for="company">Empresa (opcional)</label>
+                    <input type="text" id="company" name="company" placeholder="Nome da sua empresa ou negócio">
+                    
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, e-commerce, etc." required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Atendimento rápido e direto.</h3>
+                    <p>
+                        Preferimos uma conversa direta e sem complicação. Se você quiser, pode mandar uma mensagem com um áudio explicando o que precisa e nós traduzimos isso em um projeto para web.
+                    </p>
+                    
+                    <a href="https://wa.me/seunumerodecontato" target="_blank" class="btn btn-whatsapp" style="margin-bottom: 1.5rem;">
+                        <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                    </a>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> 
+                            E-mail: contatodevcube1@gmail.com
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> 
+                            Localização: Salvador - BA
+                        </li>
+                    </ul>
+                    <span class="contact-badge">
+                        Atendemos projetos em todo o Brasil, carinho por seu negócio como se fosse nosso. 💜
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; <span id="year"></span> DevCube — Soluções Web.
+    </footer>
+
+    <div id="form-success-popup" class="popup-success">
+        <div class="popup-content">
+            <h3>Mensagem enviada! <i class="fa-solid fa-check-circle" style="color: var(--whatsapp-green);"></i></h3>
+            <p>Obrigado por entrar em contato. Em breve retornaremos para falar sobre seu projeto.</p>
+            <div class="popup-progress">
+                <div class="popup-progress-bar"></div>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- CONTATO -->
-  <section id="contato">
-  <div class="section-inner">
-    <h2 class="section-title">Entre em contato</h2>
-    <p class="section-subtitle">
-      Conte um pouco sobre o seu projeto que retornamos com um orçamento personalizado.
-      Atendemos via e-mail, WhatsApp e reuniões online.
-    </p>
-
-    <div class="contact-grid">
-  <form action="https://formsubmit.co/contatodevcube1@gmail.com" method="POST">
-    <input type="hidden" name="_next" value="https://enidev-exe.github.io/devcube-site/?success=1">
-    <input type="hidden" name="_subject" value="Novo contato pelo site DevCube">
-    <input type="hidden" name="_template" value="box">
-    <input type="hidden" name="_captcha" value="false">
-
-
-    <label for="nome">Nome</label>
-    <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
-
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-
-    <label for="empresa">Empresa (opcional)</label>
-    <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa ou projeto">
-
-    <label for="mensagem">Mensagem</label>
-    <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, reformulação de site..." required></textarea>
-
-    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-  </form>
-  <div class="contact-info">
-        <p>
-          Preferimos uma conversa direta e sem complicação. Se você quiser, pode mandar uma mensagem com um áudio
-          explicando o que precisa e nós traduzimos isso em um projeto para web.
-        </p>
-
-        <ul class="contact-list">
-
-           <!-- Botão do whatsapp -->
-          <li>
-            <a
-              href="https://wa.me/5571986675310"
-              target="_blank"
-              class="btn btn-primary"
-            >
-              WhatsApp
-            </a>
-          </li>
-
-          <li><strong>E-mail:</strong> contatodevcube1@gmail.com</li>
-
-          <li><strong>Localização:</strong> Salvador - BA</li>
-        </ul>
-
-        <p class="contact-badge">
-          Atendemos projetos em todo o Brasil, carinho por seu negócio como se fosse nosso. 💜
-        </p>
-      </div>
-</div>
-
-      
-    </div>
-  </div>
-</section>
-
-  <footer>
-    © <span id="year"></span> DevCube — Soluções Web.
-  </footer>
-
-  <script src="script.js"></script>
-
-  <!-- POPUP DE SUCESSO FORMULÁRIO-->
-<div id="form-success-popup" class="popup-success">
-  <div class="popup-content">
-    <h3>Mensagem enviada! ✅</h3>
-    <p>Estamos muito felizes por seu contato. O quanto antes retornaremos para falar sobre seu projeto.</p>
-    <div class="popup-progress">
-      <div class="popup-progress-bar"></div>
-    </div>
-  </div>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
