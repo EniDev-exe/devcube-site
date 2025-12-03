@@ -65,15 +65,15 @@
                 </p>
                 <div class="hero-metrics">
                     <div class="metric">
-                        <strong>70%+</strong>
+                        <strong class="hero-metric-text">70%+</strong>
                         <p>aumento médio em leads após o novo site.</p>
                     </div>
                     <div class="metric">
-                        <strong>1.2s</strong>
+                        <strong class="hero-metric-text">1.2s</strong>
                         <p>tempo médio de carregamento das páginas.</p>
                     </div>
                     <div class="metric">
-                        <strong>100%</strong>
+                        <strong class="hero-metric-text">100%</strong>
                         <p>sites responsivos do celular ao desktop.</p>
                     </div>
                 </div>
@@ -124,6 +124,7 @@
         </div>
     </section>
 
+    <!--
     <section id="nossos-projetos">
         <div class="section-inner">
             <h2 class="section-title">Nossos projetos</h2>
@@ -214,7 +215,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
     <section id="contato">
         <div class="section-inner">
@@ -224,21 +225,26 @@
             </p>
 
             <div class="contact-grid">
-                <form action="process.php" method="POST">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" placeholder="Como você se chama?" required>
-                    
+                <form id="contactForm" action="https://formsubmit.co/contatodevcube1@gmail.com" method="POST">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
+
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-                    
-                    <label for="company">Empresa (opcional)</label>
-                    <input type="text" id="company" name="company" placeholder="Nome da sua empresa ou negócio">
-                    
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, e-commerce, etc." required></textarea>
-                    
+
+                    <label for="empresa">Empresa (opcional)</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa ou projeto">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente o que você precisa: site institucional, landing page, reformulação de site..." required></textarea>
+
+                    <!-- Redirecionamento após envio -->
+                    <input type="hidden" name="_next" value="https://enidev-exe.github.io/devcube-site/?success=1">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <button type="submit" class="btn btn-primary">Enviar mensagem</button>
                 </form>
+
 
                 <div class="contact-info">
                     <h3>Atendimento rápido e direto.</h3>
@@ -246,7 +252,7 @@
                         Preferimos uma conversa direta e sem complicação. Se você quiser, pode mandar uma mensagem com um áudio explicando o que precisa e nós traduzimos isso em um projeto para web.
                     </p>
                     
-                    <a href="https://wa.me/seunumerodecontato" target="_blank" class="btn btn-whatsapp" style="margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/5571986675310" target="_blank" class="btn btn-whatsapp" style="margin-bottom: 1.5rem;">
                         <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
                     </a>
                     
