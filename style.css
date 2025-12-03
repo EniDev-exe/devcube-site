@@ -292,6 +292,12 @@ section {
   font-size: 0.8rem;
 }
 
+.metric:hover {
+  box-shadow: 0 12px 30px #912f4099;
+  transform: translateY(-2px);
+  border-color: rgb(57, 57, 57);
+}
+
 .metric {
   background: var(--black);
   border-radius: 12px;
